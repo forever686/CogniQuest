@@ -1,0 +1,52 @@
+{
+    "topic": "交互式几何：两点确定一条直线",
+    "mode": "FEYNMAN",
+    "chapters": [
+        {
+            "id": "chap-1",
+            "title": "第一章：几何基础",
+            "steps": [
+                {
+                    "id": "step-1",
+                    "type": "CONCEPT",
+                    "title": "直线的定义",
+                    "content": {
+                        "id": "visual-1",
+                        "node_id": "node-1",
+                        "visual_type": "MATH_PLOT",
+                        "title": "两点确定一条直线",
+                        "content": "移动点 A 和 B，观察它们如何确定一条直线。斜率计算公式为 $m = \\frac{y_2 - y_1}{x_2 - x_1}$。",
+                        "generator_version": "manual-demo",
+                        "status": "READY",
+                        "config_json": {
+                            "functions": [
+                                {
+                                    "fn": "(x - A_x) * (B_y - A_y) / (B_x - A_x) + A_y",
+                                    "color": "indigo"
+                                }
+                            ],
+                            "points": [
+                                {
+                                    "name": "A",
+                                    "x": -2,
+                                    "y": -3,
+                                    "label": "点 A",
+                                    "color": "red"
+                                },
+                                {
+                                    "name": "B",
+                                    "x": 3,
+                                    "y": 4,
+                                    "label": "点 B",
+                                    "color": "blue"
+                                }
+                            ],
+                            "animate": false
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "createdAt": 1764424000000
+}

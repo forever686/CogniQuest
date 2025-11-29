@@ -1,0 +1,46 @@
+{
+    "topic": "语言学习：语音合成演示",
+    "mode": "FEYNMAN",
+    "chapters": [
+        {
+            "id": "chap-1",
+            "title": "第一章：基础练习",
+            "steps": [
+                {
+                    "id": "step-1",
+                    "type": "CONCEPT",
+                    "title": "法语基础",
+                    "content": {
+                        "id": "visual-1",
+                        "node_id": "node-1",
+                        "visual_type": "SLIDE",
+                        "title": "法语问候",
+                        "content": "# Bonjour!\n\n在法语中，'Bonjour' 意思是 '你好'。通常在白天使用。\n\n*   **Bonjour** (你好/日安)\n*   **Bonsoir** (晚上好)\n*   **Salut** (嗨 - 非正式)\n\n点击扬声器图标收听发音。",
+                        "image_url": "paris",
+                        "generator_version": "manual-demo",
+                        "status": "READY"
+                    }
+                },
+                {
+                    "id": "step-2",
+                    "type": "FLASHCARD",
+                    "title": "西班牙语词汇",
+                    "content": {
+                        "id": "visual-2",
+                        "node_id": "node-2",
+                        "visual_type": "SLIDE",
+                        "title": "常用词",
+                        "content": "抽认卡练习",
+                        "generator_version": "manual-demo",
+                        "status": "READY"
+                    },
+                    "flashcard": {
+                        "front": "La Biblioteca",
+                        "back": "图书馆"
+                    }
+                }
+            ]
+        }
+    ],
+    "createdAt": 1764425000000
+}

@@ -1,0 +1,60 @@
+```json
+{
+    "topic": "高等数学：LaTeX 演示",
+    "mode": "FEYNMAN",
+    "chapters": [
+        {
+            "id": "chap-1",
+            "title": "第一章：数学符号",
+            "steps": [
+                {
+                    "id": "step-1",
+                    "type": "CONCEPT",
+                    "title": "二次公式",
+                    "content": {
+                        "id": "visual-1",
+                        "node_id": "node-1",
+                        "visual_type": "SLIDE",
+                        "title": "解二次方程",
+                        "content": "# 二次公式\n\n对于形式为 $ax^2 + bx + c = 0$ 的二次方程，其解 $x$ 为：\n\n$$ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} $$\n\n这个公式给出了抛物线的根。",
+                        "image_url": "math",
+                        "generator_version": "manual-demo",
+                        "status": "READY"
+                    }
+                },
+                {
+                    "id": "step-2",
+                    "type": "ANALOGY",
+                    "title": "微积分：积分",
+                    "content": {
+                        "id": "visual-2",
+                        "node_id": "node-2",
+                        "visual_type": "SLIDE",
+                        "title": "曲线下的面积",
+                        "content": "## 定积分\n\n函数 $f(x)$ 从 $a$ 到 $b$ 的积分表示曲线下的面积：\n\n$$ \\int_{a}^{b} f(x) dx = F(b) - F(a) $$\n\n其中 $F(x)$ 是 $f(x)$ 的原函数。\n\n例如：$\\int x^2 dx = \\frac{x^3}{3} + C$",
+                        "image_url": "calculus",
+                        "generator_version": "manual-demo",
+                        "status": "READY"
+                    }
+                },
+                {
+                    "id": "step-3",
+                    "type": "SUMMARY",
+                    "title": "物理：麦克斯韦方程组",
+                    "content": {
+                        "id": "visual-3",
+                        "node_id": "node-3",
+                        "visual_type": "SLIDE",
+                        "title": "电磁学",
+                        "content": "麦克斯韦方程组描述了电场和磁场如何相互作用：\n\n1. 高斯定律：$\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0}$\n2. 高斯磁定律：$\\nabla \\cdot \\mathbf{B} = 0$\n3. 法拉第感应定律：$\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}$\n4. 安培定律：$\\nabla \\times \\mathbf{B} = \\mu_0 \\mathbf{J} + \\mu_0 \\varepsilon_0 \\frac{\\partial \\mathbf{E}}{\\partial t}$",
+                        "image_url": "physics",
+                        "generator_version": "manual-demo",
+                        "status": "READY"
+                    }
+                }
+            ]
+        }
+    ],
+    "createdAt": 1764423000000
+}
+```

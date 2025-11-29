@@ -1,0 +1,141 @@
+{
+    "id": "math-demo-001",
+    "topic": "二次函数",
+    "mode": "FEYNMAN",
+    "createdAt": 1715420000000,
+    "chapters": [
+        {
+            "id": "chap-1",
+            "title": "第一章：基础知识",
+            "steps": [
+                {
+                    "id": "step-1",
+                    "type": "CONCEPT",
+                    "title": "什么是二次函数？",
+                    "content": {
+                        "id": "asset-1",
+                        "node_id": "node-1",
+                        "visual_type": "SLIDE",
+                        "title": "抛物线",
+                        "content": "# 重力的形状\n\n二次函数是一个二次多项式，通常写作：\n\n$$ f(x) = ax^2 + bx + c $$\n\n它的图像是一条被称为**抛物线**的曲线。它在自然界中无处不在，从抛出的球的轨迹到卫星天线的形状。",
+                        "image_url": "parabola",
+                        "generator_version": "demo",
+                        "status": "READY"
+                    }
+                },
+                {
+                    "id": "step-2",
+                    "type": "ANALOGY",
+                    "title": "现实世界的类比",
+                    "content": {
+                        "id": "asset-2",
+                        "node_id": "node-2",
+                        "visual_type": "SLIDE",
+                        "title": "喷泉",
+                        "content": "# 水弧\n\n想象一个喷泉。水向上喷射，由于重力减速，在顶峰瞬间停止，然后向下加速。\n\n这条路径是一条完美的**抛物线**。水随时间变化的高度由二次方程描述。",
+                        "image_url": "fountain",
+                        "generator_version": "demo",
+                        "status": "READY"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "chap-2",
+            "title": "第二章：交互式数学",
+            "steps": [
+                {
+                    "id": "step-3",
+                    "type": "CONCEPT",
+                    "title": "交互式绘图",
+                    "content": {
+                        "id": "asset-3",
+                        "node_id": "node-3",
+                        "visual_type": "MATH_PLOT",
+                        "title": "探索参数",
+                        "content": "调整滑块，观察 **a**、**b** 和 **c** 如何影响抛物线的形状。",
+                        "config_json": {
+                            "expression": "a*x^2 + b*x + c",
+                            "parameters": [
+                                {
+                                    "name": "a",
+                                    "min": -5,
+                                    "max": 5,
+                                    "step": 0.1,
+                                    "default": 1
+                                },
+                                {
+                                    "name": "b",
+                                    "min": -5,
+                                    "max": 5,
+                                    "step": 0.1,
+                                    "default": 0
+                                },
+                                {
+                                    "name": "c",
+                                    "min": -5,
+                                    "max": 5,
+                                    "step": 0.1,
+                                    "default": 0
+                                }
+                            ]
+                        },
+                        "generator_version": "demo",
+                        "status": "READY"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "chap-3",
+            "title": "第三章：精通",
+            "steps": [
+                {
+                    "id": "step-4",
+                    "type": "QUIZ",
+                    "title": "最终挑战",
+                    "content": {
+                        "id": "asset-4",
+                        "node_id": "node-4",
+                        "visual_type": "SLIDE",
+                        "title": "测验时间",
+                        "content": "对解二次方程的步骤进行排序。",
+                        "config_json": {
+                            "template_id": "T1_DragSort",
+                            "data": {
+                                "items": [
+                                    "写成标准形式",
+                                    "因式分解或使用公式",
+                                    "求根"
+                                ],
+                                "correct_order": [
+                                    "写成标准形式",
+                                    "因式分解或使用公式",
+                                    "求根"
+                                ]
+                            },
+                            "hint": "标准形式在最前面..."
+                        },
+                        "generator_version": "demo",
+                        "status": "READY"
+                    },
+                    "quizConfig": {
+                        "template_id": "T1_DragSort",
+                        "data": {
+                            "items": [
+                                "写成标准形式",
+                                "因式分解或使用公式",
+                                "求根"
+                            ],
+                            "correct_order": [
+                                "写成标准形式",
+                                "因式分解或使用公式",
+                                "求根"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

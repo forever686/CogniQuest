@@ -1,0 +1,85 @@
+{
+    "id": "custom-lesson-001",
+    "topic": "Custom Lesson Topic",
+    "mode": "FEYNMAN",
+    "createdAt": 1717171717171,
+    "steps": [
+        {
+            "id": "step-1",
+            "type": "CONCEPT",
+            "title": "Introduction",
+            "content": {
+                "id": "visual-1",
+                "node_id": "concept-1",
+                "visual_type": "SLIDE",
+                "title": "What is [Topic]?",
+                "content": "Markdown content explaining the core concept.\n\n- Point 1\n- Point 2",
+                "image_url": "concept_image",
+                "generator_version": "1.0",
+                "status": "READY"
+            }
+        },
+        {
+            "id": "step-2",
+            "type": "ANALOGY",
+            "title": "Analogy",
+            "content": {
+                "id": "visual-2",
+                "node_id": "analogy-1",
+                "visual_type": "DIAGRAM",
+                "title": "Visual Analogy",
+                "content": "graph TD\n  A[Start] --> B[Process]\n  B --> C[End]",
+                "generator_version": "1.0",
+                "status": "READY"
+            }
+        },
+        {
+            "id": "step-3",
+            "type": "QUIZ",
+            "title": "Knowledge Check",
+            "content": {
+                "id": "visual-3",
+                "node_id": "quiz-1",
+                "visual_type": "SLIDE",
+                "title": "Quiz Time",
+                "content": "Test your understanding.",
+                "generator_version": "1.0",
+                "status": "READY"
+            },
+            "quizConfig": {
+                "template_id": "T1_DragSort",
+                "data": {
+                    "question": "Arrange the steps in order:",
+                    "options": [
+                        "Step 1",
+                        "Step 2",
+                        "Step 3"
+                    ],
+                    "correctOrder": [
+                        "Step 1",
+                        "Step 2",
+                        "Step 3"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "step-4",
+            "type": "FLASHCARD",
+            "title": "Interview Question",
+            "content": {
+                "id": "visual-4",
+                "node_id": "flashcard-1",
+                "visual_type": "SLIDE",
+                "title": "Flashcard",
+                "content": "Review this key concept.",
+                "generator_version": "1.0",
+                "status": "READY"
+            },
+            "flashcard": {
+                "front": "What is the main advantage of X?",
+                "back": "The main advantage is Y because of Z."
+            }
+        }
+    ]
+}

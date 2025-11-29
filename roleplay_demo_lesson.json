@@ -1,0 +1,33 @@
+{
+    "topic": "角色扮演：点餐",
+    "mode": "FEYNMAN",
+    "chapters": [
+        {
+            "id": "chap-1",
+            "title": "第一章：场景对话",
+            "steps": [
+                {
+                    "id": "step-1",
+                    "type": "ROLEPLAY",
+                    "title": "在餐厅",
+                    "content": {
+                        "id": "visual-1",
+                        "node_id": "node-1",
+                        "visual_type": "SLIDE",
+                        "title": "场景：晚餐点餐",
+                        "content": "你在一家法式餐厅。服务员向你的桌子走来。\n\n**目标**：点一道前菜和一道主菜。\n\n*   **前菜**：Soupe à l'oignon (洋葱汤)\n*   **主菜**：Coq au vin (红酒炖鸡)\n\n从说 'Bonjour' 开始！",
+                        "image_url": "restaurant",
+                        "generator_version": "manual-demo",
+                        "status": "READY",
+                        "config_json": {
+                            "characterName": "皮埃尔 (服务员)",
+                            "initialMessage": "Bonjour! 欢迎来到 Le Petit Bistro。您准备好点餐了吗，还是想先看看菜单？",
+                            "avatar": "waiter"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "createdAt": 1764426000000
+}
