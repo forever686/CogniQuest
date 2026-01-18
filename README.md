@@ -1,90 +1,180 @@
-# CogniQuest: 全能学习工作台
+# CogniQuest 🧠
 
-**CogniQuest** 是一个下一代 AI 驱动的学习平台，旨在适应任何学科。无论您是掌握微积分、学习法语还是练习 Python，CogniQuest 都能提供量身定制的交互式工作区。
+> AI 驱动的自适应学习平台 | 费曼学习法 + 面试准备 + 知识追踪
 
-![CogniQuest Banner](https://via.placeholder.com/1200x400?text=CogniQuest+Universal+Workspace)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Node](https://img.shields.io/badge/node-v16+-orange.svg)
 
-## 🌟 核心功能
+## ✨ 核心特性
 
-### 1. 多学科学习引擎
-*   **费曼学习流**：通过"概念 -> 类比 -> 测验"循环掌握概念。
-*   **面试准备**：翻转卡片式快速问答，为面试做好准备。
-*   **通用渲染**：
-    *   **数学**：交互式函数绘图、动态几何（可拖动点）和 LaTeX 公式渲染。
-    *   **语言**：语音朗读 (TTS)、互动查词和 AI 角色扮演场景。
-    *   **编程**：语法高亮和逻辑可视化（模拟）。
+### 🎓 智能学习模式
+| 模式 | 描述 |
+|------|------|
+| **费曼学习** | 概念 → 类比 → 测验，用自己的话教授概念 |
+| **面试准备** | 开放式问题 + AI 评估 + 多轮追问对话 |
+| **苏格拉底式** | 引导式对话，通过提问引导思考 |
 
-### 2. AI 驱动的交互
-*   **AI 导师**：上下文感知的聊天助手，引导您完成每一步。
-*   **角色扮演模式**：让自己沉浸在现实世界的场景中（例如，在餐厅点餐），与 AI 角色互动。
-*   **智能内容**：上传您自己的笔记/文档，AI 将生成结构化的课程计划。
+### 🧪 丰富的测验类型
+- ✅ 选择题 (Multiple Choice)
+- ✅ 判断题 (True/False)  
+- ✅ 填空题 (Fill Blank)
+- ✅ 拖拽排序 (Drag Sort)
+- ✅ 开放式问题 (Open Ended) - 支持 AI 流式评估
 
-### 3. 现代且响应式的 UI
-*   **玻璃拟态设计**：灵感来自高端 IDE 的时尚现代界面。
-*   **分屏工作区**："指南"（AI 聊天）和"练习"（视觉/代码）的专用区域。
-*   **深色模式**：完全支持深夜学习。
+### 📊 可视化内容
+- 📈 交互式函数图 (function-plot)
+- 📅 时间轴 (Timeline)
+- 📋 数据表格 (Spreadsheet)
+- 🎬 动画演示 (Animation)
+- 📐 LaTeX 数学公式 (KaTeX)
+- 📊 图表 (Recharts)
+
+### 🧠 自适应学习引擎
+- **BKT 知识追踪** - 贝叶斯知识追踪算法评估掌握程度
+- **间隔重复** - SM-2 算法计算最佳复习时间
+- **分层提示** - 3 级渐进提示系统
+- **自适应难度** - 根据表现动态调整难度
+
+### 🤖 AI 功能
+- 🎤 **语音输入** - 语音转文字 (Web Speech API)
+- 🔊 **语音朗读** - AI 内容朗读 (TTS)
+- 📝 **语法检查** - 简洁的语法和表达检查
+- 💬 **AI 导师** - 上下文感知的学习助手
+- 🎭 **角色扮演** - 沉浸式语言学习场景
+
+---
 
 ## 🚀 快速开始
 
-###先决条件
-*   Node.js (v16+)
-*   npm 或 yarn
+### 环境要求
+- Node.js v16+
+- npm 或 yarn
+- MySQL 数据库 (或使用 SQLite)
 
-### 安装
+### 安装步骤
 
-1.  **克隆仓库**
-    ```bash
-    git clone <repository-url>
-    cd CogniQuest
-    ```
+```bash
+# 1. 克隆仓库
+git clone <repository-url>
+cd CogniQuest
 
-2.  **安装依赖**
-    ```bash
-    # 安装前端依赖
-    npm install
+# 2. 安装前端依赖
+npm install
 
-    # 安装后端依赖
-    cd server
-    npm install
-    cd ..
-    ```
+# 3. 安装后端依赖
+cd server
+npm install
+cd ..
 
-### 运行应用程序
+# 4. 配置环境变量
+cp .env.example .env.local
+# 编辑 .env.local 添加 DeepSeek API Key
+```
 
-您需要同时运行前端和后端服务器。
+### 启动服务
 
-1.  **启动后端服务器**
-    ```bash
-    cd server
-    npm run dev
-    ```
-    *服务器运行在 http://localhost:3001*
+```bash
+# 终端 1: 启动后端 (端口 3001)
+cd server
+npm run dev
 
-2.  **启动前端客户端**（在新的终端中）
-    ```bash
-    npm run dev
-    ```
-    *客户端运行在 http://localhost:5173*
+# 终端 2: 启动前端 (端口 5173)
+npm run dev
+```
+
+访问 http://localhost:5173 开始学习！
+
+---
+
+## 📁 项目结构
+
+```
+CogniQuest/
+├── src/
+│   ├── components/
+│   │   ├── Dashboard.tsx        # 主面板
+│   │   ├── LessonContainer.tsx  # 课程容器
+│   │   ├── HintSystem.tsx       # 提示系统
+│   │   ├── AdaptivePanel.tsx    # 自适应推荐
+│   │   ├── MasteryView.tsx      # 知识掌握可视化
+│   │   ├── templates/           # 测验模板
+│   │   ├── renderers/           # 可视化渲染器
+│   │   ├── workspace/           # 工作区组件
+│   │   └── editor/              # 课程编辑器
+│   ├── services/
+│   │   ├── api.ts               # API 服务
+│   │   ├── deepseek.ts          # AI 服务
+│   │   ├── knowledge.ts         # BKT 知识追踪
+│   │   ├── evaluationService.ts # 评估服务
+│   │   └── tts.ts               # 语音合成
+│   └── types/                   # TypeScript 类型
+├── server/
+│   ├── index.js                 # Express 服务器
+│   └── schema.sql               # 数据库架构
+└── *.json                       # 演示课程文件
+```
+
+---
 
 ## 📚 演示课程
 
-我们包含了一些演示文件来展示平台的功能。使用搜索栏中的"上传"按钮导入这些 JSON 文件。
+| 文件 | 主题 | 展示功能 |
+|------|------|---------|
+| `math_demo_lesson.json` | 线性函数 | 交互式函数图、滑块 |
+| `geometry_demo_lesson.json` | 几何基础 | 可拖动点、动态计算 |
+| `latex_demo_lesson.json` | 高等数学 | LaTeX 渲染 |
+| `language_demo_lesson.json` | 法语/西班牙语 | TTS、互动文本 |
+| `roleplay_demo_lesson.json` | 餐厅场景 | AI 角色扮演 |
+| `python_advanced_course_*.json` | Python 高级 | 面试问题、开放式评估 |
 
-| 文件 | 描述 | 展示的功能 |
-| :--- | :--- | :--- |
-| `math_demo_lesson.json` | 线性函数 | 交互式函数绘图仪，参数滑块 |
-| `geometry_demo_lesson.json` | 几何基础 | **可拖动点**，动态直线方程 |
-| `latex_demo_lesson.json` | 高等数学 | **LaTeX 渲染**（积分，麦克斯韦方程组） |
-| `language_demo_lesson.json` | 法语和西班牙语 | **语音朗读**，**互动文本**（点击定义） |
-| `roleplay_demo_lesson.json` | 餐厅场景 | **AI 角色扮演模式**（与服务员聊天） |
+---
 
 ## 🛠️ 技术栈
 
-*   **前端**: React, TypeScript, Vite, Tailwind CSS, Framer Motion
-*   **可视化**: function-plot, Recharts, Mermaid.js, React Markdown (KaTeX)
-*   **后端**: Node.js, Express, SQLite (better-sqlite3)
-*   **AI**: DeepSeek API (已集成)
+| 层级 | 技术 |
+|------|------|
+| **前端** | React 18, TypeScript, Vite, Tailwind CSS |
+| **可视化** | function-plot, Recharts, Mermaid.js, KaTeX |
+| **后端** | Node.js, Express, MySQL/SQLite |
+| **AI** | DeepSeek API (流式输出) |
+| **语音** | Web Speech API (TTS + STT) |
+
+---
+
+## 📖 API 端点
+
+| 方法 | 端点 | 描述 |
+|------|------|------|
+| `GET` | `/api/history/:userId` | 获取学习历史 |
+| `GET` | `/api/lessons/:id` | 获取课程详情 |
+| `POST` | `/api/lessons` | 保存课程 |
+| `DELETE` | `/api/lessons/:id` | 删除课程 |
+| `GET` | `/api/mastery/:userId` | 获取知识掌握度 |
+| `POST` | `/api/mastery` | 更新掌握度 |
+| `POST` | `/api/deepseek/chat/stream` | AI 对话 (流式) |
+
+---
+
+## 🗺️ 开发路线图
+
+- [x] BKT 知识追踪
+- [x] 间隔重复算法
+- [x] 分层提示系统
+- [x] 流式 AI 评估
+- [x] 语音输入/输出
+- [x] 语法检查
+- [ ] 代码沙盒 (Monaco + Pyodide)
+- [ ] 可视化课程编辑器
+- [ ] 用户认证系统
+- [ ] 移动端适配
+
+---
 
 ## 📝 许可证
 
-MIT
+MIT License © 2025-2026
+
+---
+
+**Made with ❤️ for lifelong learners**
